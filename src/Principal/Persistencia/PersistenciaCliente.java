@@ -1,6 +1,6 @@
 package Principal.Persistencia;
 
-import Principal.Model.Cliente;
+import Principal.Model.ModelCliente;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -18,26 +18,31 @@ public class PersistenciaCliente {
         /**
          * @param Array Cliente
          */
-    	public static void exportaCliente(ArrayList<Cliente> Cliente) throws IOException {
-		GsonBuilder builder = new GsonBuilder();
+    	public static void exporta(ArrayList<ModelCliente> aCliente) {
+                try {
+                GsonBuilder builder = new GsonBuilder();
 		Gson gson = builder.create();
-		FileWriter writer = new FileWriter("gson/arquivos/cliente.json");
-		writer.write(gson.toJson(Cliente));
+                    FileWriter writer = new FileWriter("gson/arquivos/cliente.json");
+                    writer.write(gson.toJson(aCliente));
 		writer.close();
+                } catch (IOException ex) {
+                    JOptionPane.showMessageDialog(null, "Não foi possível salvar o Cliente!");
+                }
+
 	}
         
         /**
          * @return Array Cliente
          */
-	public static ArrayList<Cliente> importaCliente() throws FileNotFoundException { 																											// CLIENT
+	public static ArrayList<ModelCliente> importa(){ 																											// CLIENT
 		try {
 			BufferedReader bufferedReader = new BufferedReader(new FileReader("gson/arquivos/cliente.json"));
-			Type listType = new TypeToken<ArrayList<Cliente>>() {
+			Type listType = new TypeToken<ArrayList<ModelCliente>>() {
 			}.getType();
 			return new Gson().fromJson(bufferedReader, listType);
 		} catch (FileNotFoundException e) {
                     JOptionPane.showMessageDialog(null, "Não foi possível carregar os Clientes!");
-                    return null;
+                    return new ArrayList<ModelCliente>();
 		}
 	}
 }

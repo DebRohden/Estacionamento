@@ -1,6 +1,6 @@
 package Principal.Persistencia;
 
-import Principal.Model.Funcionario;
+import Principal.Model.ModelFuncionario;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -14,28 +14,28 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class PersistenciaFuncionario {
-    
-    
-    	public void exportaFuncionario(ArrayList<Funcionario> Funcionario) throws IOException {
+       
+    public static void exporta(ArrayList<ModelFuncionario> aFuncionario) {
+        try {
+            GsonBuilder builder = new GsonBuilder();
+            Gson gson = builder.create();
+            FileWriter writer = new FileWriter("gson/arquivos/funcionario.json");
+            writer.write(gson.toJson(aFuncionario));
+            writer.close();
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, "Não foi possível salvar o Funcionário!");
+        }
+    }
 
-		GsonBuilder builder = new GsonBuilder();
-		Gson gson = builder.create();
-		FileWriter writer = new FileWriter("gson/arquivos/funcionario.json");
-		writer.write(gson.toJson(Funcionario));
-		writer.close();
-	}
-
-	public ArrayList<Funcionario> importaFuncionario(ArrayList<Funcionario> funcionario) throws FileNotFoundException {
-
-		try {
-
-			BufferedReader bufferedReader = new BufferedReader(new FileReader("gson/arquivos/funcionario.json"));
-			Type listType = new TypeToken<ArrayList<Funcionario>>() {
-			}.getType();
-			return new Gson().fromJson(bufferedReader, listType);
-		} catch (FileNotFoundException e) {
-                    JOptionPane.showMessageDialog(null, "Não foi possível carregar os Funcionários!");
-			return null;
-		}
-	}
+    public static ArrayList<ModelFuncionario> importa() {
+        try {
+                BufferedReader bufferedReader = new BufferedReader(new FileReader("gson/arquivos/funcionario.json"));
+                Type listType = new TypeToken<ArrayList<ModelFuncionario>>() {
+                }.getType();
+                return new Gson().fromJson(bufferedReader, listType);
+        } catch (FileNotFoundException e) {
+            JOptionPane.showMessageDialog(null, "Não foi possível carregar os Funcionários!");
+                return null;
+        }
+    }
 }

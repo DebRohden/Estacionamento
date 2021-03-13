@@ -1,6 +1,6 @@
 package Principal.Persistencia;
 
-import Principal.Model.Valor;
+import Principal.Model.ModelValor;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -11,27 +11,32 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 
 public class PersistenciaValor {
     
-    public void exportaValor(ArrayList<Valor> Valor) throws IOException {
+    public static void exporta(ArrayList<ModelValor> aValor){
 
-		GsonBuilder builder = new GsonBuilder();
-		Gson gson = builder.create();
-		FileWriter writer = new FileWriter("gson/valor.json");
-		writer.write(gson.toJson(Valor));
-		writer.close();
-	}
+        try {
+            GsonBuilder builder = new GsonBuilder();
+            Gson gson = builder.create();
+            FileWriter writer = new FileWriter("gson/arquivos/valor.json");
+            writer.write(gson.toJson(aValor));
+            writer.close();
+        } catch (IOException ex) {
+            JOptionPane.showMessageDialog(null, "Não foi possível salvar o Valor!");
+        }
+    }
 
-    public ArrayList<Valor> importaValor(ArrayList<Valor> Valor) throws FileNotFoundException {
+    public static ArrayList<ModelValor> importa() {
 
 	try {
-            BufferedReader bufferedReader = new BufferedReader(new FileReader("gson/valor.json"));
-            Type listType = new TypeToken<ArrayList<Valor>>() {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader("gson/arquivos/valor.json"));
+            Type listType = new TypeToken<ArrayList<ModelValor>>() {
             }.getType();
             return new Gson().fromJson(bufferedReader, listType);
 	} catch (FileNotFoundException e) {
-            return null;
+            return new ArrayList<ModelValor>();
 	}
         
     }

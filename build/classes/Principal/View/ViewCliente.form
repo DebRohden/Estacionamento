@@ -6,7 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -24,77 +24,26 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="campoTelefone" max="32767" attributes="0"/>
+                  <Component id="labelTelefone" min="-2" max="-2" attributes="0"/>
+                  <Component id="labelNome" min="-2" max="-2" attributes="0"/>
+                  <Component id="campoNome" max="32767" attributes="0"/>
+                  <Component id="campoEmail" alignment="0" max="32767" attributes="0"/>
+                  <Component id="labelEmail" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="TextNomeCADCliente" min="-2" max="-2" attributes="0"/>
-                                  <Component id="caixaNomeCadCliente" min="-2" pref="239" max="-2" attributes="0"/>
-                                  <Component id="caixaEmaillCadCliente" alignment="0" min="-2" pref="239" max="-2" attributes="0"/>
-                                  <Component id="TextEmailCadCliente" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="CadastramentoClienteVeiculoTExt" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="TextMarcaCadCliente" min="-2" max="-2" attributes="0"/>
-                                  <Component id="caixaMarcaCadCliente" min="-2" pref="239" max="-2" attributes="0"/>
-                                  <Component id="TextModeloCadCliente" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="caixaPlacaCadCliente" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="TextTelefoneCadCliente" min="-2" max="-2" attributes="0"/>
-                                  <Component id="TextPlacaCadCliente" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                          <Component id="caixaTelefoneCliente" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                              <Component id="caixaModeloCadCliente" min="-2" pref="239" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
-                              <Component id="botaoVoltar" min="-2" pref="141" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="caixaCorCliente" max="32767" attributes="0"/>
-                                  <Group type="102" attributes="0">
-                                      <Component id="TextCorCadCliente" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                                  </Group>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="84" max="32767" attributes="0"/>
-                              <Component id="botaoCadastrarCliente" min="-2" pref="129" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="botaoVoltar" min="-2" pref="106" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="botaoCadastro" min="-2" pref="115" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="25" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="CadastramentoClienteText" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="160" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="labelCadastro" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -102,63 +51,33 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-              <Component id="CadastramentoClienteText" min="-2" max="-2" attributes="0"/>
+              <Component id="labelCadastro" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="TextNomeCADCliente" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="TextTelefoneCadCliente" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <Component id="labelNome" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="caixaNomeCadCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="caixaTelefoneCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <Component id="campoNome" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="TextEmailCadCliente" min="-2" max="-2" attributes="0"/>
+              <Component id="labelEmail" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="caixaEmaillCadCliente" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Component id="CadastramentoClienteVeiculoTExt" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="campoEmail" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="labelTelefone" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="campoTelefone" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TextMarcaCadCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TextPlacaCadCliente" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="botaoVoltar" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
+                  <Component id="botaoCadastro" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="caixaMarcaCadCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="caixaPlacaCadCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TextModeloCadCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TextCorCadCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="caixaModeloCadCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="caixaCorCliente" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="botaoCadastrarCliente" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                          <Component id="botaoVoltar" alignment="3" min="-2" pref="38" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
+              <EmptySpace pref="17" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JTextField" name="caixaNomeCadCliente">
+    <Component class="javax.swing.JTextField" name="campoNome">
     </Component>
-    <Component class="javax.swing.JLabel" name="TextNomeCADCliente">
+    <Component class="javax.swing.JLabel" name="labelNome">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -166,7 +85,7 @@
         <Property name="text" type="java.lang.String" value="Nome"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="TextTelefoneCadCliente">
+    <Component class="javax.swing.JLabel" name="labelTelefone">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -174,7 +93,7 @@
         <Property name="text" type="java.lang.String" value="Telefone"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="TextEmailCadCliente">
+    <Component class="javax.swing.JLabel" name="labelEmail">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
@@ -182,75 +101,24 @@
         <Property name="text" type="java.lang.String" value="Email"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="caixaEmaillCadCliente">
+    <Component class="javax.swing.JTextField" name="campoEmail">
     </Component>
-    <Component class="javax.swing.JTextField" name="caixaTelefoneCliente">
+    <Component class="javax.swing.JTextField" name="campoTelefone">
     </Component>
-    <Component class="javax.swing.JToggleButton" name="botaoCadastrarCliente">
+    <Component class="javax.swing.JToggleButton" name="botaoCadastro">
       <Properties>
         <Property name="text" type="java.lang.String" value="CADASTRAR"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botaoCadastrarClienteActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botaoCadastroActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="caixaCorCliente">
-    </Component>
-    <Component class="javax.swing.JTextField" name="caixaMarcaCadCliente">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="caixaMarcaCadClienteActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="TextModeloCadCliente">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Modelo"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="caixaModeloCadCliente">
-    </Component>
-    <Component class="javax.swing.JLabel" name="TextPlacaCadCliente">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Placa"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="caixaPlacaCadCliente">
-    </Component>
-    <Component class="javax.swing.JLabel" name="TextMarcaCadCliente">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Marca"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="CadastramentoClienteText">
+    <Component class="javax.swing.JLabel" name="labelCadastro">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="CADASTRAMENTO CLIENTE"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="CadastramentoClienteVeiculoTExt">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="VEICULO"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="TextCorCadCliente">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Cor"/>
+        <Property name="text" type="java.lang.String" value="CADASTRO CLIENTE"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="botaoVoltar">
